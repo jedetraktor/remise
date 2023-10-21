@@ -1,0 +1,17 @@
+montantTTC = float(input("Veuillez saisir un montant TTC :"))
+
+remise1 = 2 * montantTTC /100
+montant1 = montantTTC - remise1
+remise2 = 5 * montantTTC /100
+montant2 = montantTTC - remise2
+remise3 = 10 * montantTTC/ 100
+montant3 = montantTTC - remise3
+
+if montantTTC > 500 and montantTTC < 1000 :
+    print(f"{montant1}")
+elif montantTTC > 1000 and montantTTC < 2000 :
+    print(f"{montant2}")
+elif montantTTC > 2000 :
+    print(f"{montant3}")
+else :
+    print("Pas de remise")
